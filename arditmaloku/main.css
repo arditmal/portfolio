@@ -1,0 +1,892 @@
+/** Colors **/
+/** Font Weight **/
+/** Responsive Devices **/
+.container {
+  width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+header .navbar .navbar-nav .nav-item:last-of-type .nav-link {
+  padding-right: 0;
+  margin-right: 0;
+}
+header .navbar .navbar-nav .nav-item:first-of-type .nav-link {
+  margin-left: 0;
+}
+header .logo-widget {
+  width: 220px;
+}
+header .logo-widget span {
+  font-family:Sacramento-Regular;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  position: relative;
+}
+header .logo-widget span:before {
+  content: "</>";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  bottom: 2px;
+  right: -18px;
+  border-radius: 50%;
+  color: #fff76aba;
+}
+header .top-header {
+  background-color: black;
+  display: none;
+}
+header .main-navigation {
+  position: fixed;
+  width: 100%;
+  padding: 15px 0px;
+  -webkit-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  z-index: 9;
+}
+header .main-navigation .button {
+  margin-left: 30px;
+}
+header .main-navigation .navbar {
+  padding: 5px 0;
+}
+header .main-navigation.menu-bg-overlay {
+  background: black;
+  padding: 10px 0px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+  top: 0;
+}
+header .main-navigation.menu-bg-overlay .navbar {
+  box-shadow: none;
+  padding: 0;
+  margin-top: 0;
+}
+header .main-navigation.menu-bg-overlay .navbar .info {
+  display: none;
+}
+header .main-navigation.menu-bg-overlay .navbar .navbar-nav {
+  margin-top: 0;
+}
+header .main-navigation .navbar-nav {
+  font-family: Poppins-Medium;
+  font-size: 16px;
+  display: flex;
+}
+header .main-navigation .navbar-nav .nav-item {
+  position: relative;
+  margin-left: 30px;
+}
+header .main-navigation .navbar-nav .nav-item .nav-link {
+  position: relative;
+  color: white;
+  padding: 0;
+}
+header .main-navigation .navbar-nav .nav-item .nav-link:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #fff76aba;
+  transition: width 0.3s;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+}
+header .main-navigation .navbar-nav .nav-item .nav-link.active {
+  color: #fff76aba;
+}
+header .main-navigation .navbar-nav .nav-item .nav-link.active:after {
+  opacity: 1;
+  width: 100%;
+}
+header .main-navigation .navbar-nav .nav-item:hover .nav-link {
+  color: #fff76aba;
+}
+header .main-navigation .navbar-nav .nav-item:hover .nav-link:after {
+  opacity: 1;
+  width: 100%;
+  transition: width 0.3s;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  
+}
+footer .copyright {
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #000;
+}
+footer .copyright p {
+  margin: 0;
+  color: rgb(255, 255, 255);
+  font-family: Poppins-Light;
+  font-size: 16px;
+}
+footer .copyright p span {
+  font-family: Sacramento-Regular;
+  font-size: 24px;
+}
+
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("/arditmaloku/fonts/roboto/Roboto-Black.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("/arditmaloku/fonts/roboto/Roboto-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/arditmaloku/fonts/roboto/Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("/arditmaloku/fonts/poppins/Poppins-Medium.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("/arditmaloku/fonts/poppins/Poppins-Bold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("/arditmaloku/fonts/poppins/Poppins-SemiBold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("/arditmaloku/fonts/poppins/Poppins-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("/arditmaloku/fonts/poppins/Poppins-Light.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-ExtraBold";
+  src: url("/arditmaloku/fonts/poppins/Poppins-ExtraBold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sacramento-Regular";
+  src: url("/arditmaloku/fonts/sacramento/Sacramento-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+.banner {
+  padding: 200px 0;
+  background-color: black;
+}
+.banner .content {
+  color: white;
+}
+.banner .content .text {
+  margin-top: 20px;
+  font-size: 165px;
+  line-height: 58px;
+  font-family: "Poppins-Bold";
+  text-transform: uppercase;
+  padding-top: 0;
+  color: #fff76a96;
+  margin-left: -8px;
+}
+.banner .content h1 {
+  font-family: "Poppins-Bold";
+  font-size: 40px;
+  line-height: 55px;
+}
+.banner .content h1 span {
+  font-family: Sacramento-Regular;
+  font-weight: 900;
+  font-size: 72px;
+}
+.banner .content h1 span.underline {
+  font-size: 40px;
+  border-bottom: 1px solid #fff76aba;
+  font-family: Poppins-Bold;
+}
+
+.about-us-section {
+  padding: 100px 0;
+}
+.about-us-section .about-me-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.about-us-section .about-me {
+  max-width: calc(50% - 20px);
+}
+.about-us-section .about-me-skills {
+  max-width: calc(50% - 20px);
+}
+.about-us-section .about-me-skills .skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-us-section .about-me-skills .skills-wrapper .skills-item {
+  max-width: calc(100% / 4);
+}
+.about-us-section .img-wrapper {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 50px;
+  position: relative;
+}
+.about-us-section .img-wrapper img {
+  object-fit: cover;
+  border-radius: 50%;
+}
+.about-us-section .img-wrapper:before {
+  left: -20px;
+  content: "";
+  position: absolute;
+  width: 215px;
+  height: 215px;
+  background-color: #fff76aba;
+  border-radius: 50%;
+  z-index: -1;
+  top: -20px;
+}
+.about-us-section .content h3 {
+  font-family: Poppins-Bold;
+  color: black;
+  font-size: 26px;
+}
+.about-us-section .content.second {
+  padding-top: 100px;
+}
+.about-us-section .content .skills-box {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+.about-us-section .content .button-wrapper {
+  margin-top: 50px;
+}
+
+.quote-section {
+  padding: 120px 0;
+  text-align: center;
+  background-image: url(images/general/twinkling-stars.png);
+  background-position: 60% 21%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.quote-section:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 75px;
+  background-color: white;
+  bottom: -70px;
+  transform: skewY(4deg);
+  right: 0;
+  z-index: 1;
+}
+.quote-section:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 75px;
+  background-color: white;
+  bottom: -70px;
+  transform: skewY(-4deg);
+  right: 0;
+  z-index: 1;
+}
+.quote-section h2 {
+  text-align: center;
+  color: white;
+  font-family: "Poppins-Bold";
+  font-size: 40px;
+  position: relative;
+  margin-bottom: 40px;
+}
+.quote-section p {
+  color: white;
+  position: relative;
+}
+
+.portfolio-section {
+  padding: 100px 0;
+  position: relative;
+  z-index: 3;
+}
+.portfolio-section .section-title {
+  margin-bottom: 50px;
+}
+.portfolio-section .portfolio-box {
+  position: relative;
+  margin-bottom: 30px;
+  height: 390px;
+}
+.portfolio-section .portfolio-box .img-wrapper {
+  height: 390px;
+  transition: all 0.3s ease-in-out;
+}
+.portfolio-section .portfolio-box .img-wrapper img {
+  filter: grayscale(100%);
+  object-fit: cover;
+}
+.portfolio-section .portfolio-box:hover .img-wrapper {
+  transition: all 0.3s ease-in-out;
+}
+.portfolio-section .portfolio-box:hover .img-wrapper img {
+  filter: grayscale(0%);
+}
+.portfolio-section .portfolio-box:hover .box-item-content {
+  bottom: 10px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.portfolio-section .portfolio-box:hover .box-item-content .content-box {
+  opacity: 1;
+  visibility: visible;
+}
+.portfolio-section .portfolio-box .box-item-content {
+  position: absolute;
+  z-index: 9;
+  bottom: -65px;
+  left: 0;
+  width: 100%;
+  padding: 0 10px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.portfolio-section .portfolio-box .box-item-content .content-box {
+  background: black;
+  padding: 40px 31px 37px 31px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.portfolio-section .portfolio-box .box-item-content .content-box p {
+  color: white;
+  font-family: Poppins-Light;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.portfolio-section .portfolio-box .box-item-content .content-box .text-box {
+  position: relative;
+}
+.portfolio-section .portfolio-box .box-item-content .content-box .text-box:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 50%;
+  border-bottom: 1px solid #fff76aba;
+  left: 0;
+}
+.portfolio-section .portfolio-box .box-item-content .content-box .tech-box {
+  padding-top: 10px;
+}
+.portfolio-section .portfolio-box .box-item-content .content-box .info-box a {
+  color: white;
+  font-family: Poppins-Bold;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+  display: inline-block;
+}
+.portfolio-section .portfolio-box .box-item-content .content-box .info-box a i {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-10px);
+}
+.portfolio-section .portfolio-box .box-item-content .content-box .info-box a:hover {
+  color: #fff76aba;
+  transition: all 0.3s ease-in-out;
+}
+.portfolio-section .portfolio-box .box-item-content .content-box .info-box a:hover i {
+  opacity: 1;
+  transform: translateX(10px);
+  transition: all 0.3s ease-in-out;
+}
+.portfolio-section .button-wrapper {
+  margin-top: 50px;
+  text-align: center;
+}
+.portfolio-section .portfolio {
+  display: none;
+}
+
+.contact-me-section {
+  padding: 100px 0;
+}
+
+/** Colors **/
+/** Font Weight **/
+/** Responsive Devices **/
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("/arditmaloku/fonts/roboto/Roboto-Black.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("/arditmaloku/fonts/roboto/Roboto-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/arditmaloku/fonts/roboto/Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("/arditmaloku/fonts/poppins/Poppins-Medium.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("/arditmaloku/fonts/poppins/Poppins-Bold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("/arditmaloku/fonts/poppins/Poppins-SemiBold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("/arditmaloku/fonts/poppins/Poppins-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("/arditmaloku/fonts/poppins/Poppins-Light.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-ExtraBold";
+  src: url("/arditmaloku/fonts/poppins/Poppins-ExtraBold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sacramento-Regular";
+  src: url("fonts/sacramento/Sacramento-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+/** Colors **/
+/** Font Weight **/
+/** Responsive Devices **/
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("fonts//roboto/Roboto-Black.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("fonts//roboto/Roboto-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("fonts//roboto/Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("fonts/poppins/Poppins-Medium.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("fonts/poppins/Poppins-Bold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("fonts/poppins/Poppins-SemiBold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("fonts/poppins/Poppins-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("fonts/poppins/Poppins-Light.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-ExtraBold";
+  src: url("fonts/poppins/Poppins-ExtraBold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sacramento-Regular";
+  src: url("fonts/sacramento/Sacramento-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+#page {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none !important;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.mobile-nav {
+  display: none;
+  position: relative;
+  top: 0;
+  z-index: 9;
+}
+
+#menu {
+  z-index: 99;
+  font-family: Poppins-Light;
+  color: white !important;
+}
+#menu i {
+  padding-right: 5px;
+}
+#menu li:hover {
+  color: #fff76aba;
+}
+
+.mburger {
+  float: right;
+}
+
+#my-header {
+  color: #fff76aba;
+}
+
+.mburger:hover {
+  color: #fff76aba !important;
+}
+
+.mobile-nav-fixed {
+  width: 100%;
+  position: fixed;
+  top: -3em;
+  left: 0;
+  z-index: 9;
+}
+
+body.mm-wrapper.mm-wrapper_opened.mm-wrapper_blocking.mm-wrapper_background.mm-wrapper_opening #page header .mobile-nav .mburger {
+  position: absolute;
+  right: 0;
+}
+
+p {
+  font-family: Poppins-Regular;
+  color: black;
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+.section-title {
+  margin-bottom: 25px;
+  position: relative;
+}
+.section-title h2 {
+  font-family: "Poppins-Bold";
+  font-size: 30px;
+  color: black;
+  line-height: 32px;
+  position: relative;
+  z-index: 9;
+}
+.section-title span {
+  font-family: "Poppins-Bold";
+  font-size: 65px;
+  text-transform: uppercase;
+  color: #fff76aba;
+  position: absolute;
+  top: -52px;
+  left: -10px;
+}
+
+.button {
+  color: black;
+  font-size: 18px;
+  font-family: "Poppins-Bold";
+  margin-left: 10px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.button:hover {
+  color: black;
+}
+.button:hover:after {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.button:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  border-bottom: 2px solid;
+  bottom: -3px;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+.button:focus {
+  outline: none;
+  border: none;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  text-decoration: none;
+  color: white;
+  background-color: #fff76aba;
+  font-size: 14px;
+  padding: 12px 16px;
+  display: none;
+  border-radius: 50%;
+  z-index: 999;
+}
+.back-to-top:hover {
+  color: white;
+}
+
+.bg {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: pulse1 1.2s ease infinite;
+  background: #fff76aba;
+  display: none;
+  z-index: 99;
+}
+
+@keyframes pulse1 {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+.responsive-logo {
+  display: none;
+  position: absolute;
+  top: 10px;
+}
+
+.error {
+  color: red;
+  font-family: Roboto-Regular;
+  font-size: 16px;
+}
+
+.stars, .twinkling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.stars {
+  background: #000 url(images/general/twinkling-stars.png) repeat top center;
+  z-index: 0;
+}
+
+.twinkling {
+  background: transparent url(images/general/twinkling.png) repeat top center;
+  z-index: 0;
+  -moz-animation: move-twink-back 200s linear infinite;
+  -ms-animation: move-twink-back 200s linear infinite;
+  -o-animation: move-twink-back 200s linear infinite;
+  -webkit-animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 200s linear infinite;
+}
+
+@keyframes move-twink-back {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -10000px 5000px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header .main-navigation {
+    display: none;
+  }
+
+  header .top-header {
+    display: block;
+  }
+
+  .responsive-logo {
+    display: inline-block;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .banner .content .text {
+    font-size: 85px;
+    line-height: 58px;
+  }
+
+  .banner .content h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .banner .content h1 span {
+    font-weight: 500;
+    font-size: 40px;
+  }
+
+  .banner .content h1 span.underline {
+    font-size: 30px;
+  }
+
+  .banner {
+    padding: 150px 0;
+    background-color: black;
+  }
+
+  .about-us-section, .portfolio-section, .contact-me-section {
+    padding: 60px 0;
+  }
+
+  .section-title span {
+    font-size: 55px;
+    line-height: 100px;
+  }
+
+  .about-us-section .img-wrapper {
+    margin-left: 20px;
+  }
+
+  .about-us-section .content.second {
+    padding-top: 50px;
+  }
+
+  .quote-section h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .quote-section {
+    padding: 80px 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
+
+.social-footer {
+  padding: 1rem;
+  background: #8a8a8a;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social-footer .social-footer-icons li:last-of-type {
+  margin-right: 0;
+}
+
+.social-footer .social-footer-icons .fa {
+  font-size: 1.3rem;
+  color: #fefefe;
+}
+
+.social-footer .social-footer-icons .fa:hover {
+  color: #4a4a4a;
+  transition: color 0.3s ease-in;
+}
+

@@ -1,0 +1,71 @@
+#band-cookies {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.1;
+  background-color: #00A1E4!important;
+  color: #fff;
+  box-shadow: 0 -3px 3px 0 rgba(0, 0, 0, 0.15);
+}
+#band-cookies p {
+  margin: 0;
+  padding: 0 50px;
+  color: #ffffff;
+  font-family: Roboto-Regular;
+  font-size: 16px;
+}
+#band-cookies p a {
+  color: white !important;
+  text-decoration: underline;
+}
+#band-cookies-info,
+#band-cookies-ok {
+  display: inline-block;
+  color: #ffffff !important;
+  text-decoration: unset !important;
+  cursor: pointer;
+  background-color: #8cc63f;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-left: 25px;
+}
+#band-cookies-info,
+#band-cookies-ok:hover {
+  text-decoration: unset !important;
+}
+#band-cookies-close {
+  padding: 8px;
+  position: absolute;
+  right: 26px;
+  top: 50%;
+  margin-top: -16px;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  background-color: transparent !important;
+}
+@media (max-width: 768px) {
+  #band-cookies p {
+    padding: 15px 15px 0;
+  }
+  #band-cookies-info,
+  #band-cookies-ok {
+    display: block;
+    text-decoration: none;
+    padding: 10px 5px;
+    margin-top: 10px;
+    background-color: transparent;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+  }
+  #band-cookies-close {
+    right: 0;
+    top: 14px !important;
+  }
+}
